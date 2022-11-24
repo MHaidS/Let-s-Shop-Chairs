@@ -35,7 +35,8 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
+  /* 80 / 96 */
 }
 
 h2 {
@@ -52,9 +53,11 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 18px;
-  padding: 16px 32px;
+  /* font-size: 18px;
+  padding: 16px 32px; */
   display: inline-block;
+  border-radius: 100px;
+  /* cannot be less than the height */
 }
 
 .btn:hover,
@@ -78,6 +81,10 @@ h2 {
   column-gap: 80px;
 }
 
+img {
+  border-radius: 12px;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -87,7 +94,8 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
+  margin-top: 64px;
+  /* 64 / 80 */
 }
 
 .header-text-box {
@@ -95,11 +103,14 @@ header {
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
   /*  44 / 52 / 62 */
+
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+  /* text-shadow is applicable if you are going to place text on top an image */
 }
 
 .header-text {
@@ -117,7 +128,8 @@ img {
   stroke: #087f5b;
   width: 32px;
   height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  /* 24 / 32 */
 }
 
 .features-title {
@@ -135,6 +147,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -153,11 +166,27 @@ img {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .chair-box {
-  padding: 24px;
+  padding: 32px;
+  /* 32 / 48 */
 }
 
 h3 {
@@ -174,7 +203,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .chair-details li:last-child {
@@ -191,6 +220,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  align-items: center;
 }
 
 footer {
@@ -204,3 +234,5 @@ footer {
 /* https://yeun.github.io/open-color/ */
 
 /* https://heroicons.com */
+
+/*  */
